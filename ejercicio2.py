@@ -1,3 +1,7 @@
+#Vas a crear un programa en Python que gestione una lista de estudiantes. Cada estudiante tiene
+#un nombre, una edad y una calificación. El programa debe permitir agregar nuevos estudiantes,
+#actualizar la calificación de un estudiante, listar todos los estudiantes y guardar/cargar la lista de
+#estudiantes desde un archivo en formato JSON
 
 import json
 import time 
