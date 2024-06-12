@@ -1,3 +1,10 @@
+#Vamos a crear un programa en Python que gestione una lista de tareas. Cada tarea tiene un título,
+#una descripción y un estado (pendiente o completada). El programa debe permitir agregar nuevas
+#tareas, marcar tareas como completadas, listar todas las tareas y guardar/cargar las tareas desde
+#un archivo en formato JSON
+
+
+
 import time
 import json
 lista_de_tareas = [
