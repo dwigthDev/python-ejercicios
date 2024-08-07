@@ -13,7 +13,7 @@ lista_curso = [
     }
 ]
 
-def barra_de_carga(): #YO RECICLO CODIGO COMO SI FUERA PLASTICO XD
+def barra_de_carga(): #Este bloque de codigo es una barra de carga
     print("\nCargando... pi pu pi pu")
     tiempo_inicio = time.time()
     tiempo_actual = time.time()
