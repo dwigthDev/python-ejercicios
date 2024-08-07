@@ -55,23 +55,23 @@ def marcar_completada(lista_de_tareas, nombre):
 
 def listar_tareas(lista_de_tareas):
     barra_de_carga()
-    if len(lista_de_tareas) == 0:
+    if len(lista_de_tareas) == 0: #verifica si hay al menos una tarea
         print("\nAun no hay tareas creadas\n")
     else:
         print(f"\nEn total tienes {len(lista_de_tareas)} tareas:\n")
-        for tarea in lista_de_tareas:
+        for tarea in lista_de_tareas:    #imprime en pantalla las tareas
             print(f"Nombre de la tarea: {tarea['titulo']}\n Descripcion: {tarea['descripcion']}\n Estado: {tarea['estado']} \n")
             time.sleep(1)
         print("***Fin del listado*** \n")
 
-def guardar_tareas(lista_de_tareas):
+def guardar_tareas(lista_de_tareas): #con esta funcion se genera un archivo JSON que guarda los datos
     barra_de_carga()
     with open ("DB_Listas.json",'w') as database:
         json.dump(lista_de_tareas, database, indent=4)
         print("\n***Guardado correctamente***\n")
 
 
-def cargar_tareas():
+def cargar_tareas():#esta funcion se encarga de leer el archivo generado 
     try:
         barra_de_carga()
         print("\n")
