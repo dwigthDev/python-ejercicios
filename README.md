@@ -1,4 +1,4 @@
-README.txt
+README
 ===========
 
 Repositorio de 100 Miniproyectos en Python
